@@ -13,7 +13,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario,Long> {
 
     boolean existsByEmail(String email);
 
-    //Serve basicamente para evitrarmos o retorno de informação nula
+    //Serve basicamente para evitarmos o retorno de informação nula
     Optional<Usuario> findByEmail(String email);
 
     //@Transactional - usado para evitar erros na hora de deletar
